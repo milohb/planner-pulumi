@@ -1,0 +1,54 @@
+{
+  "routingDefaults": {
+    "walkSpeed": 1.1,
+    "bikeSpeed": 4.1,
+    "carSpeed": 8.3,
+    "transferSlack": 100,
+    "bikeSwitchTime": 60,
+    "bikeSwitchCost": 60,
+    "maxTransfers": 8,
+    "waitReluctance": 1.2,
+    "waitAtBeginningFactor": 0.7,
+    "walkReluctance": 5,
+    "stairsReluctance": 10,
+    "walkBoardCost": 240,
+    "comment": "Ignore walkOnStreetReluctance as implementation is too simple and causes unexpected detours",
+    "ignored_walkOnStreetReluctance": 1.5,
+    "itineraryFiltering": 1.0
+  },
+  "vectorTileLayers": [
+    {
+      "name": "stops",
+      "type": "Stop",
+      "mapper": "Digitransit",
+      "maxZoom": 20,
+      "minZoom": 14,
+      "cacheMaxSeconds": 600
+    },
+    {
+      "name": "stations",
+      "type": "Station",
+      "mapper": "Digitransit",
+      "maxZoom": 20,
+      "minZoom": 12,
+      "cacheMaxSeconds": 600
+    },
+    {
+      "name": "citybikes",
+      "type": "BikeRental",
+      "mapper": "Digitransit",
+      "maxZoom": 20,
+      "minZoom": 14,
+      "cacheMaxSeconds": 60
+    }
+  ],
+  "updaters": [
+    {
+      "type": "stop-time-updater",
+      "frequencySec": 60,
+      "sourceType": "gtfs-http",
+      "url": "http://gtfsr.vbn.de/gtfsr_connect.bin",
+      "feedId": "1"
+    }
+  ]
+}

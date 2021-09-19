@@ -1,0 +1,8 @@
+{
+  "embedRouterConfig": true,
+  "storage": {
+    "graph": "PLACEHOLDER_GRAPH_URI",
+    "gtfs": [ "PLACEHOLDER_GTFS_URI" ],
+    "osm": [ "PLACEHOLDER_OSM_URI" ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "otpFeatures" : {
+    "APIBikeRental": false,
+    "GoogleCloudStorage": true,
+    "APIGraphInspectorTile": false,
+    "SandboxAPILegacyGraphQLApi": true,
+    "SandboxAPIMapboxVectorTilesApi": true
+  }
+}
