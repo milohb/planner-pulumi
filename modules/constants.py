@@ -17,7 +17,7 @@ INGRESS_CERT_NAME = 'planner-ssl-cert'
 
 # docker images
 OTP_IMAGE = 'milohb/otp:v210713v21'
-DIGITRANSIT_IMAGE = 'milohb/digitransit:v210907'
+DIGITRANSIT_IMAGE = 'milohb/digitransit:v210919'
 PHOTON_IMAGE = 'milohb/photon:v210829'
 INITCONTAINER_IMG = 'milohb/initcontainer:v210906'
 PELIAS_IMAGE = 'mfdz/photon-pelias-adapter:9af8e59f298719566cb55a1efb0e96545d079c49'
